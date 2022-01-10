@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title"  value="Trang base" />
+        <put-attribute name="header"  value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer"  value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content"  value="BASE" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="schedule" extends="baseLayout">
+        <put-attribute name="title" value="Tuyến xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/schedule.jsp" />
+    </definition>
+    <definition name="trips" extends="baseLayout">
+        <put-attribute name="title" value="Chuyến xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/trips.jsp" />
+    </definition>
+    <definition name="ticket" extends="baseLayout">
+        <put-attribute name="title" value="Đặt vé"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/ticket.jsp" />
+    </definition>
+    <definition name="payment" extends="baseLayout">
+        <put-attribute name="title" value="Thanh toán"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/payment.jsp" />
+    </definition>
+    <definition name="admin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin.jsp" />
+    </definition>
+    <definition name="signup" template="/WEB-INF/jsp/signup.jsp">
+        <put-attribute name="title" value="Đăng ký"/>
+    </definition>
+    <definition name="signin" template="/WEB-INF/jsp/signin.jsp">
+        <put-attribute name="title" value="Đăng nhập"/>
+    </definition>
+    <definition name="profile" extends="baseLayout">
+        <put-attribute name="title" value="Hồ sơ"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/userprofile.jsp" />
+    </definition>
+    <definition name="ticketdetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết vé"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/ticketdetail.jsp" />
+    </definition>
+    <!-- ADMIN PAGE DEFINITION -->
+    <definition name="baseAdminLayout" template="/WEB-INF/layout/base-admin.jsp">
+        <put-attribute name="title"  value="Trang quản lý" />
+        <put-attribute name="header"  value="/WEB-INF/layout/header-admin.jsp" />
+        <put-attribute name="footer"  value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content"  value="/WEB-INF/jsp/admin/index-admin.jsp" />
+    </definition>
+    <definition name="pointsAdmin" extends="baseAdminLayout">
+        <put-attribute name="title" value="Quản lý địa điểm"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/points-admin.jsp" />
+    </definition>
+    <definition name="linesAdmin" extends="baseAdminLayout">
+        <put-attribute name="title" value="Quản lý tuyến xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/lines-admin.jsp" />
+    </definition>
+    <definition name="tripsAdmin" extends="baseAdminLayout">
+        <put-attribute name="title" value="Quản lý chuyến xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/trips-admin.jsp" />
+    </definition>
+    <definition name="vehiclesAdmin" extends="baseAdminLayout">
+        <put-attribute name="title" value="Quản lý xe"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/vehicles-admin.jsp" />
+    </definition>
+    <definition name="usersAdmin" extends="baseAdminLayout">
+        <put-attribute name="title" value="Quản lý người dùng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/users-admin.jsp" />
+    </definition>
+    <definition name="lineStats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê theo tuyến"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/line-stats.jsp" />
+    </definition>
+    <definition name="tripStats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê theo chuyến"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/trip-stats.jsp" />
+    </definition>
+    <definition name="monthStats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê theo tháng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/month-stats.jsp" />
+    </definition>
+</tiles-definitions>

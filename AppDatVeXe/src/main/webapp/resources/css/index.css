@@ -1,0 +1,412 @@
+.main-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: 10px;
+}
+.book-ticket{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.book-ticket-container{
+    max-width: 936px;
+    width: 100vw;
+    border-radius: 16px;
+    box-shadow: 4px 4px 20px 1px hsl(0 ,0% ,55%);
+    background-color: #fff;
+    padding: 24px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.roundtrip-checkbox-container{
+    position: relative;
+    display: block;
+}
+.roundtrip-checkbox-container > label{
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.btn.btn-primary.search{
+    padding: 8px 20px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 10px;
+    right: 40px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px 1px hsl(0 ,0% ,75%);
+    border: none;
+    background-color: rgb(78 122 153);
+}
+.btn.btn-primary:hover{
+    background-color: rgb(102 168 212);
+    transition: all 0.3s ease-out;
+}
+.select-place-container{
+    padding-right: 15px;
+    padding-top: 15px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.auto-fill-place{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dce1e6;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: auto auto 10px;
+}
+.label-small{
+    font-weight: 700;
+    text-align: center;
+    color: #637280;
+    margin-bottom: 4px;
+    display: inline-block;
+    max-width: 100%;
+}
+.select-place{
+    font-size: 20px;
+    color: #111;
+    border: none;
+    background: none;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 4px;
+    font-weight: 700;
+    text-align: center;
+}
+.data-list-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 110%;
+    background: #fff;
+    border: none;
+    z-index: 1000;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    overflow-y: scroll;
+
+}
+.data-list-container.hide{
+    display: none;
+}
+.list-place > li{
+    display: list-item;
+    padding: 5px;
+}
+.select-date-container{
+    padding-right: 15px;
+    padding-top: 15px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.select-date{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dce1e6;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: auto auto 10px;
+}
+.select-date-dis{
+    color: grey;
+    pointer-events: none;
+    background: grey;
+    opacity: .1;
+    opacity: .1!important;
+    background-color: grey!important;
+}
+.search-btn{
+    margin-top: 10px;
+}
+.react-datepicker__input-container > input{
+    width: 100%;
+    font-size: 20px;
+    color: rgba(73, 73, 73, 0.73);
+    border: none;
+    padding: 4px;
+    text-align: center;
+}
+.selectpicker.place{
+    font-size: 20px;
+    color: rgba(73, 73, 73, 0.73);
+    border: none;
+    background: none;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 4px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.input-date{
+    font-size: 20px;
+    color: rgba(73, 73, 73, 0.73);
+    border: none;
+    background: none;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 1px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* ====================================== Css Những tuyến đi phổ biến  ===================================*/
+
+.cards {
+    padding: 2rem 4rem;
+    background: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #252e48;
+}
+
+.cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+}
+
+.cards__items {
+    margin-bottom: 24px;
+}
+
+.cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+.cards__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none !important;
+}
+
+.cards__item__pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 40%;
+    overflow: hidden;
+}
+
+.fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+}
+
+.cards__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+    z-index: 31;
+}
+
+.cards__item__img {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 30;
+    transition: all 0.2s linear;
+}
+
+.cards__item__img:hover {
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
+
+.cards__item__info {
+    width: 400px;
+    padding: 20px 30px 30px;
+}
+
+.cards__item__text {
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 20px;
+}
+.fas{
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 1265px) {
+    .cards__items {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1265px) {
+    .cards__item {
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 1265px) {
+    .cards__wrapper {
+        width: 100%;
+    }
+}
+
+/* ===================================== QualityCheck ===========================*/
+
+.tugi-quality-honor{
+    max-width: 936px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 264px;
+}
+.title-container{
+    display: flex;
+    width: inherit;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.title{
+    font-weight: 900;
+    font-size: min(5vw,50px);
+    text-align: center;
+    color: #f15a24;
+    white-space: nowrap;
+    max-width: 100vw;
+    text-transform: uppercase;
+}
+.title::before{
+    right: .5em;
+    margin-left: -90%;
+    background-color: #f15925;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 90%;
+}
+.title::after{
+    left: .5em;
+    background-color: #f15925;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 90%;
+}
+.summary{
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-self: center;
+}
+.summary-item{
+    display: flex;
+    flex-direction: row;
+}
+.summary-icon{
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+}
+.summary-title{
+    font-weight: 900;
+    font-size: min(5vw,50px);
+    text-align: start;
+    color: #f15a24;
+    white-space: nowrap;
+    max-width: 100vw;
+    text-transform: uppercase;
+    margin-bottom: 0 ;
+}
+.subtitle{
+    font-size: 13px;
+    font-weight: 700;
+    color: #00613d;
+    margin-bottom: 4px;
+}
+.des{
+    max-width: 224px;
+    font-size: 13px;
+    color: #637280;
+    display: flex;
+}
+@media only screen and (min-width: 1024px) {
+    .summary {
+        display: flex;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .summary-item {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
